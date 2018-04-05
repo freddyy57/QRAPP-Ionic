@@ -1,0 +1,21 @@
+
+<ion-content padding>
+
+<!-- this creates a google map on the page with the given lat/lng from -->
+<!-- the component as the initial center of the map: -->
+<agm-map [latitude]="lat" [longitude]="lng" [zoom]="10">
+  <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+</agm-map>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-buttons end>
+      <button ion-button
+              (click)="cerrar_modal()">
+        Cerrar
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
